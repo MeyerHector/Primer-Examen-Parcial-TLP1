@@ -1,0 +1,2 @@
+Este proyecto consiste en crear un porfolio personal utilizando HTML, CSS y Bootstrap. En el porfolio se presentarán paginas con información sobre el mi, mis habilidades y proyectos en los que trabajé o esté trabajando. Además, se implementará un sistema de grillas para visualizar el porfolio de forma adecuada en diferentes dispositivos.
+El objetivo de este proyecto es mostrar las habilidades y proyectos del estudiante en el mundo digital de una manera atractiva y profesional.
