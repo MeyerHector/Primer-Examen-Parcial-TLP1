@@ -32,7 +32,7 @@ main {
   }
 #right {
     width: 35%;
-    background-color: rgb(28, 40, 28);
+    background-color: #ffff;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -61,8 +61,8 @@ h3 {
   }
 .btn {
     color: rgb(224, 224, 224);
-    background-color:rgb(87, 194, 81);
-    border-color:rgb(61, 137, 57);
+    background-color:rgb(96, 96, 96);
+    border-color:rgb(91, 91, 91);
     font-size: 20px;
     transition: background-color 0.3s ease;
 }
@@ -72,3 +72,51 @@ border-color: black;
 }
   
   
+.navbar-brand {
+    background-color: white !important;
+}
+
+@media screen and (max-width: 800px) {
+    body {
+        width: 100vw;
+        height: 100vh;
+    }
+    .padre {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 93.3%;
+        margin: 0;
+
+    }
+    #left {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+
+      }
+
+      #right {
+        display: none;
+
+    }
+    .header {
+        height: 10%;
+    }
+}
+@media screen and (min-width: 801px) {
+    header {
+        display: none;
+    }
+    main {
+        height: 100vh;
+        width: 100vw;
+    }
+    
+}
