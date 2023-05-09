@@ -13,6 +13,7 @@ video {
     border-color: black;
     z-index: 1;
     width: 100%;
+    position: fixed;
 }
 
 #link {
@@ -24,6 +25,7 @@ color: white;
     background-color: transparent;
 }
 main {
+    padding-top: 50px;
     display: flex;
     flex-direction: row;
     justify-content: center;

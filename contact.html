@@ -43,59 +43,49 @@
     <main>
         <form class="col-sm-6 main" action="#">
             <h1>Contact me</h1>
-                <div class="input-group">
-                    <span class="input-group-text">First and last name</span>
-                    <input type="text" aria-label="First name" placeholder="Juan" class="form-control">
-                    <input type="text" aria-label="Last name" placeholder="Perez" class="form-control">
-                </div>
+            <div class="input-group">
+                <span class="input-group-text">First and last name</span>
+                <input type="text" aria-label="First name" placeholder="Juan" class="form-control" required>
+                <input type="text" aria-label="Last name" placeholder="Perez" class="form-control" required>
+            </div>
 
-                <div class="input-group mb-3">
-                    <span class="input-group-text">Email</span>
-                    <input type="email" class="form-control" placeholder="juanperez@gmail.com" aria-label="Email"
-                        aria-describedby="basic-addon2">
-                </div>
+            <div class="input-group mb-3">
+                <span class="input-group-text">Email</span>
+                <input type="email" class="form-control" placeholder="juanperez@gmail.com" aria-label="Email"
+                    aria-describedby="basic-addon2">
+            </div>
 
-                <div class="input-group">
-                    <span class="input-group-text">Your message</span>
-                    <textarea class="form-control" aria-label="YourMessage"></textarea>
+            <div class="input-group">
+                <span class="input-group-text">Your message</span>
+                <textarea class="form-control" aria-label="YourMessage" required></textarea>
+            </div>
+            <!-- Button trigger modal -->
+            <div class="button">
+                <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Send
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">Congratulations</h1>
+
+                            </div>
+                            <div class="modal-body">
+                                Your message has been successfully registered
+                            </div> 
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="button">
-                    <input class="btn btn-dark btn" type="submit" value="Submit">
-                </div> 
+            </div>
+
         </form>
-            
-        <!-- <form class="col-md-6 row g-3 needs-validation form2" novalidate>
-            <div class="col-md-4">
-              <label for="validationCustom01" class="form-label">First name</label>
-              <input type="text" class="form-control" id="validationCustom01" placeholder="mark" required>
-              <div class="valid-feedback">
-                Looks good!
-              </div>
-            </div>
-
-            <div class="col-md-4">
-              <label for="validationCustom02" class="form-label">Last name</label>
-              <input type="text" class="form-control" id="validationCustom02" placeholder="Otto" required>
-              <div class="valid-feedback">
-                Looks good!
-              </div>
-            </div>
-
-            <div class="col-md-4">
-              <label for="validationCustomUsername" class="form-label">Email</label>
-              <div class="input-group has-validation">
-                <input type="email" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
-                <div class="invalid-feedback">
-                  Please enter a email.
-                </div>
-              </div>
-            </div>
-
-            <div class="col-12">
-              <button class="btn btn-primary" type="submit">Submit form</button>
-            </div>
-          </form>
- -->
     </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
